@@ -1,0 +1,95 @@
+.animation {
+  margin: 120px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animation-header1 {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  animation: cir-animation 1s ease infinite;
+  margin-bottom: 100px;
+}
+.animation-header__cir {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: aliceblue;
+}
+
+@keyframes cir-animation {
+  50% {
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+
+.animation-header2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.animation-header__rec {
+  width: 12px;
+  height: 70px;
+  background-color: aliceblue;
+  animation: rec-animation 1s ease infinite;
+}
+
+@keyframes rec-animation {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(1.8);
+  }
+  50%,
+  100% {
+    transform: none;
+  }
+}
+
+.animation-header__rec:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animation-header__rec:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.animation-header__rec:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.animation-header__rec:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 100px;
+}
+
+#login-form input {
+  border: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: aliceblue;
+  text-align: start;
+  padding: 15px;
+  transition: border 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  color: aliceblue;
+}
+
+#login-form input:focus {
+  background-color: aliceblue;
+  border: none;
+}
